@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".LoginFormActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/uni1"
+        android:layout_width="match_parent"
+        android:scaleY="0.7"
+        android:scaleX="0.7"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="login.json"
+        app:lottie_loop="true"
+
+        />
+
+    <Button
+        android:id="@+id/googleAuthInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="구글인증"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/SignOutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onRegisterClick"
+        android:text="로그아웃"
+        android:layout_marginBottom="50dp"
+        android:textSize="20sp" />
+
+</LinearLayout>
